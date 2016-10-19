@@ -17,12 +17,19 @@
      // your first name.
      // Also DECLARE (but do not instantiate) a `lastName` variable.
 
-     
+     var firstName = 'Josiah';
+     var lastName;
+
+
+
 
      // TODO 2: Create a `greeting` variable as a string which says:
      //    "Hello there _____!"
      // Replace the _____ above with the value of the `firstName` variable.
      // NOTE: Do NOT simply retype your first name in the `greeting` value.
+
+     var greeting = 'Hello there ' + firstName + '!';
+
 
 
 
@@ -30,11 +37,25 @@
      // for the current year. Then create a third variable to store your age!
      // Name these: `birthYear`, `currentYear`, and `age`
 
+     var birthYear = 1988;
+     var currentYear = 2016;
+     var age = currentYear - birthYear;
+
 
 
      // TODO 4: Create a new variable called `style` - if your age is under 35,
      // store "hip" in this variable, but if your age is 35 or over, store
      // "classic" in this variable.
+
+
+     var style;
+     if (age < 35){
+       console.log('hip');
+       style='hip';
+     }else{
+       console.log('classic');
+      style='classic';
+     }
 
 
 
@@ -45,10 +66,27 @@
      // awesome, set `review` to "good", otherwise set the `review` variable to "bad"
 
 
+     var instructorIsAwesome = true;
+     var review;
+     if (instructorIsAwesome === true){
+      review='good';
+     }
+     else{
+       review ='bad';
+     }
+
+
+
 
      // TODO 6: Create a function called `math` which accepts to numbers as
      // arguments and returns the result of adding them together, mutliplying
      // by 10, then dividing by the first number.
+
+     function math(y,x){
+       return (y+x) * 10 / y
+     }
+
+
 
 
 
@@ -56,6 +94,16 @@
      // arguments. The function should insert the words into this sentence:
      // "I prefer __1__ while I __2__ so that I don't __3__ on the __4__."
      // Finally, the function should return that new sentence.
+
+     function madlib(word1, word2, word3, word4){
+       return 'I prefer ' + word1 + ' while I ' + word2  + ' so that I don\'t ' + word3 + ' on the ' + word4 + '.'
+     }
+
+
+
+
+
+
 
 
 
